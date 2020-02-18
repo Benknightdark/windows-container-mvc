@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  windows-container-yeah:
+    image: windows-container-yeah
+    build: .
+    ports:
+      - 3000:3000

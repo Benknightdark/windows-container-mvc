@@ -12,5 +12,5 @@ FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019 as
 WORKDIR /inetpub/wwwroot
 # 複製發行用的MVC專案的所有檔案
 COPY --from=sdk C:\WebApplication1\WebApplication1\bin\Release\Publish\. .
-# 開放容器對片的80 port
+# 開放容器對放的80 port
 EXPOSE 80

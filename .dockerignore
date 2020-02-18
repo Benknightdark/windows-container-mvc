@@ -22,3 +22,14 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 README.md
+
+
+# directories
+**/bin/
+**/obj/
+**/out/
+
+# files
+Dockerfile*
+**/*.trx
+**/*.md

@@ -3,6 +3,7 @@
 FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019 as sdk
 # 複製要發行的MVC專案
 COPY ./WebApplication1/. ./WebApplication1/
+RUN nuget restore  C:\WebApplication1\WebApplication1.sln
 # 使用MSBuild建置和發行MVC專案
 RUN msbuild  C:\WebApplication1\WebApplication1.sln /p:DeployOnBuild=true  /p:PublishProfile=FolderProfile.pubxml
 
